@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragment.AddFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notes"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FragAddTitle"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Enter Title"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/gray"
+            android:textSize="13sp"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FragAddDes"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Enter Description"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/gray"
+            android:textSize="13sp"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textAllCaps="false"
+        android:id="@+id/FragAddBtnAdd"
+        android:background="@drawable/border_button"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="50dp"/>
+
+</LinearLayout>
